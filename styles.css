@@ -1,0 +1,63 @@
+/* Reset & body */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Center container */
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 20px;
+  margin: 1.5rem 0;
+}
+.fill {
+  width: 0%;
+  height: 100%;
+  background: #007bff;
+  transition: width 1s ease-out;
+}
+/* Kick off the animation */
+body.loaded .fill {
+  width: 80%;
+}
+
+/* Form styles */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #0056b3;
+}

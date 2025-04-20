@@ -2,27 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MyApp – Coming Soon</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>GuideLogix – Coming Soon</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <!-- Optional: your logo -->
-    <!-- <img src="assets/logo.png" alt="MyApp Logo" class="logo"> -->
-
-    <h1>Coming Soon</h1>
-    <p>We’re at <strong>80%</strong>—leaking early access now!</p>
+    <h1 class="logo">GuideLogix</h1>
+    <h2 class="subtitle">Coming Soon!</h2>
 
     <div class="progress-bar">
       <div class="fill"></div>
     </div>
 
-    <form action="https://formspree.io/f/mldjqqyp" method="POST">
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Tell us why you’d like access"></textarea>
+    <p class="tagline">but we’re leaking early access now…</p>
+
+    <form
+      action="https://formspree.io/f/mldjqqyp"
+      method="POST"
+      class="form"
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+      />
+      <textarea
+        name="message"
+        placeholder="Tell us why you’d like access"
+      ></textarea>
       <button type="submit">Get Early Access</button>
     </form>
   </div>
+
+  <script>
+    // Animate the progress bar from 0 → 80%
+    window.addEventListener("load", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
 </body>
 </html>
